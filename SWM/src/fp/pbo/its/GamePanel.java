@@ -26,7 +26,6 @@ public class GamePanel extends JPanel {
     private int delay;
     private Color Fcolor, Bcolor;
     private Apple apple;
-    private JButton tryagain;
     boolean running = false;
     Timer timer;
     Random random;
@@ -99,16 +98,9 @@ public class GamePanel extends JPanel {
             g.drawString("Length: " + snake.getBodyParts(), 5, 38);
         } else {
             gameOver(g);
-            TryAgain();
         }
 
     }
-
-    private void TryAgain() {
-		tryagain = new JButton("2");
-		tryagain.setBounds(300, 350, 50, 50);
-		
-	}
 
 	public void newApple() {
         int appleX = random.nextInt((int) (width / cell)) * cell;
