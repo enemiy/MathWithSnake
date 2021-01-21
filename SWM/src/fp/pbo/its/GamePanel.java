@@ -159,15 +159,7 @@ public class GamePanel extends JPanel {
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Game Over", 
         		(width - metrics2.stringWidth("Game Over")) / 2, height / 2);
-        
-//    	g.setColor(Color.WHITE);
-//        g.setFont(new Font("Ink Free", Font.BOLD, 20));
-//        FontMetrics metrics3 = getFontMetrics(g.getFont());
-//    	g.drawString("TRY AGAIN", 
-//    			(width - metrics3.stringWidth("TRY AGAIN")) / 2, (height / 2)+60);
-    	
-       
-        
+              
     }
 
     public class MyKeyAdapter extends KeyAdapter {
